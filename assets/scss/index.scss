@@ -1,0 +1,9 @@
+// Override variables
+@import "variables";
+
+// Import default variables and styles
+@import "@scbd-coreui";
+
+// Custom styles
+@import "custom";
+@import "theme";

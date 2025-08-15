@@ -1,0 +1,49 @@
+// Here you can add other styles
+
+.d-dev-block,
+.d-dev-inline,
+.d-dev-flex {
+  display: none;
+}
+
+.dev .d-dev-block {
+  display: block;
+}
+
+.dev .d-dev-inline {
+  display: inline;
+}
+
+.dev .d-dev-flex {
+  display: flex;
+}
+
+.dev .footer,
+.dev .sidebar {
+  color: white;
+  background-color: darkred;
+}
+
+.dev .footer a {
+  color: lightskyblue;
+}
+
+.sidebar {
+  background: rgb(60, 75, 100);
+}
+
+.sidebar .nav-link:hover {
+  color: white;
+  background: #321fdb;
+}
+
+.sidebar .sidebar-header,
+.sidebar .sidebar-footer {
+  background: rgba(0, 0, 21, .2);
+}
+
+.nav-link {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
