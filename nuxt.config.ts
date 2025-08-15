@@ -11,7 +11,7 @@ export default defineNuxtConfig({
     public: 'static'
   },    
   extends: [
-    '../coreui',
+    ['github:desmat/scbd-coreui', { install: true }],
   ],
   css: [
     '@scbd-layout/index.scss'
