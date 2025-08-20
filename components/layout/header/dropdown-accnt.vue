@@ -7,18 +7,7 @@
       class="py-0 pe-0"
       :caret="false"
     >
-      <CAvatar size="md">
-        <Avatar
-          v-if="isAuthenticated"
-          :username="user.name"
-          size="40"
-          class="d-flex justify-content-center align-items-center"
-        />
-        <CIcon
-          v-else
-          icon="cil-user"
-        />
-      </CAvatar>
+      <LayoutHeaderAvatar :user="user" />
     </CDropdownToggle>
     <CDropdownMenu class="pt-0">
       <CDropdownHeader
@@ -53,11 +42,9 @@
 </template>
 
 <script setup>
-import Avatar from '@webzlodimir/vue-avatar';
-
 const isAuthenticated = useState('isAuthenticated', () => true);
+const user = computed(() => ({ name: "John Smith", isAuthenticated: isAuthenticated.value }));
 
-const user = { name: "John Smith"};
 const login = () => isAuthenticated.value = true;
 const logout = () => isAuthenticated.value = false;
 const profile = () => console.warn("NOT IMPLEMENTED: profile");
