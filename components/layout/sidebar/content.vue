@@ -23,10 +23,8 @@
   setup
   lang="ts"
 >
-const isAuthenticated = useState('isAuthenticated');
+const { isAuthenticated, login } = useScbdAuth();
 const { getRoutes } = useRouter();
-
-const login = () => isAuthenticated.value = true;
 
 const securityGroup = {
   name: "Security",

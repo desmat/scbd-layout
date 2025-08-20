@@ -9,9 +9,10 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/migration/configuration
   dir: {
     public: 'static'
-  },    
+  },
   extends: [
     ['github:desmat/scbd-coreui', { install: true }],
+    'github:desmat/scbd-auth',
   ],
   css: [
     '@scbd-layout/index.scss'
@@ -23,5 +24,10 @@ export default defineNuxtConfig({
         '@scbd-layout': fileURLToPath(new URL('./assets/scss', import.meta.url)),
       },
     },
+  },
+  runtimeConfig: {
+    public: {
+      authApiUrl: '',
+    }
   },  
 })

@@ -42,10 +42,5 @@
 </template>
 
 <script setup>
-const isAuthenticated = useState('isAuthenticated', () => true);
-const user = computed(() => ({ name: "John Smith", isAuthenticated: isAuthenticated.value }));
-
-const login = () => isAuthenticated.value = true;
-const logout = () => isAuthenticated.value = false;
-const profile = () => console.warn("NOT IMPLEMENTED: profile");
+const { user, isAuthenticated, login, logout, profile } = useScbdAuth();
 </script>
