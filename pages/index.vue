@@ -1,9 +1,6 @@
 <template>
   <div style="padding: 0 1rem; text-align: center; display: flex; flex-direction: column; gap: 0.5rem;">
     <h1>Layout Index Page</h1>
-    <div>
-      <CButton color="primary">I'm a button</CButton>
-    </div>
   </div>
 </template>
 
