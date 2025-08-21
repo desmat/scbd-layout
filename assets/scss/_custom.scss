@@ -47,3 +47,23 @@
   gap: 0.25rem;
   align-items: center;
 }
+
+.sidebar .sidebar-dev-narrow {
+  display: none
+}
+
+.sidebar.sidebar-narrow-unfoldable .sidebar-dev-narrow {
+  display: block;
+}
+
+.sidebar.sidebar-narrow-unfoldable .sidebar-dev-full {
+  display: none;
+}
+
+.sidebar.sidebar-narrow-unfoldable:hover .sidebar-dev-narrow {
+  display: none;
+}
+
+.sidebar.sidebar-narrow-unfoldable:hover .sidebar-dev-full {
+  display: block;
+}

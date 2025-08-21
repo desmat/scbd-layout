@@ -30,7 +30,8 @@
       />
     </CSidebarHeader>
     <div class="d-dev-block text-center fw-bolder pt-2">
-      D E V E L O P M E N T
+      <span class="sidebar-dev-narrow">D E V</span>
+      <span class="sidebar-dev-full">D E V E L O P M E N T</span>      
     </div>
     <CSidebarNav>
       <LayoutSidebarContent />
